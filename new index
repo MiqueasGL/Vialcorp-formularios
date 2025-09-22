@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios VialCorp</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 1rem;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    #searchBar {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .category {
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background-color: #fff;
+    }
+    .category-header {
+      background-color: #0078D4;
+      color: white;
+      padding: 1rem;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .category-header:hover {
+      background-color: #005a9e;
+    }
+    .category-content {
+      display: none;
+      padding: 1rem;
+    }
+    .form-card {
+      background-color: #f9f9f9;
+      padding: 0.8rem;
+      margin-bottom: 0.8rem;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .form-card h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1rem;
+      color: #222;
+    }
+    .form-card a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #0078D4;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .form-card a:hover {
+      background-color: #005a9e;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formularios VialCorp</h1>
+  <input type="text" id="searchBar" placeholder="Buscar formulario..." onkeyup="filterForms()">
+
+  <!-- CATEGORÍA OPERACIONES -->
+  <div class="category">
+    <div class="category-header" onclick="toggleCategory(this)">Operaciones</div>
+    <div class="category-content">
+      <div class="form-card">
+        <h2>Stock de Agua</h2>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScefOXaN7bGrXoJaSHTHIOGezf4hj6bo258p6Wq_IT6qR-KWg/viewform" target="_blank">Abrir formulario</a>
+      </div>
+      <div class="form-card">
+        <h2>Control de entrega de Bischofita</h2>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEjn1vbg12jQdLbWBHnRLlEK2HmgD1CiMIsjksHCDU1j64dA/viewform" target="_blank">Abrir formulario</a>
+      </div>
+      <div class="form-card">
+        <h2>Solicitud de retiro/ingreso de existencias en bodega (EPP y otros)</h2>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeP26ca_934vhYqEcGeI_VybxdtHFI9Aq1ixlsHRS7BCF102w/viewform" target="_blank">Abrir formulario</a>
+      </div>
+      <div class="form-card">
+        <h2>Traslado de personal y Horas Extra</h2>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd87TQmi613rMbc9XFCENgdyBP4AQEz1KJ5aM0Szj9LnAMdCw/viewform" target="_blank">Abrir formulario</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORÍA EQUIPOS -->
+  <div class="category">
+    <div class="category-header" onclick="toggleCategory(this)">Equipos</div>
+    <div class="category-content">
+      <div class="form-card">
+        <h2>Control de combustible TSP</h2>
+        <a href="https://docs.google.com/forms/d/1zsoGdRaEG0CSGLupLJPdn70EoMsfLziBu3XqifEfpEg/viewform?edit_requested=true" target="_blank">Abrir formulario</a>
+      </div>
+      <div class="form-card">
+        <h2>Reportabilidad diaria de Equipos</h2>
+        <a href="https://forms.cloud.microsoft/r/imGxpps91K?origin=QRCode" target="_blank">Abrir formulario</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORÍA INFORMACIÓN PERSONAL -->
+  <div class="category">
+    <div class="category-header" onclick="toggleCategory(this)">Información Personal</div>
+    <div class="category-content">
+      <div class="form-card">
+        <h2>Actualización de información de conductores contrato TSP</h2>
+        <a href="https://forms.office.com/r/92L3eTm1Ce" target="_blank">Abrir formulario</a>
+      </div>
+      <div class="form-card">
+        <h2>Consulta estado de pase de ingreso a Centinela (Acreditación)</h2>
+        <a href="https://siga-consulta-pase.apps.aminerals.cl/" target="_blank">Abrir formulario</a>
+      </div>
+      <div class="form-card">
+        <h2>Licencias Internas</h2>
+        <a href="licencias.html">Abrir listado</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORÍA SEGURIDAD Y SALUD -->
+  <div class="category">
+    <div class="category-header" onclick="toggleCategory(this)">Seguridad y Salud Ocupacional</div>
+    <div class="category-content">
+      <div class="form-card">
+        <h2>Reporte de Actividades Turno fin de Semana</h2>
+        <a href="https://forms.office.com/pages/responsepage.aspx?id=Wj1v2UIwKkCZSwVyWy4UJ0UYBr5841lNptCgZmFQj5hUMlRFU0JKR0dZT0ZRWTZUQk05NFcwVlhGNCQlQCN0PWcu&route=shorturl" target="_blank">Abrir formulario</a>
+      </div>
+      <div class="form-card">
+        <h2>Declaración de Medicamentos a SSO Centinela</h2>
+        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=Wj1v2UIwKkCZSwVyWy4UJ9ejEETFNaxFmtmVBbt_V3lUMVFMUU5CSjFXVTlINjdCT01RTDhPS0QxMy4u" target="_blank">Abrir formulario</a>
+      </div>
+      <div class="form-card">
+        <h2>Acceso a las GCC</h2>
+        <a href="https://www.directic.cl/BeSafe/DirecticHome/frm_defaultDetalle.aspx?id_padre=844" target="_blank">Abrir formulario</a>
+      </div>
+      <div class="form-card">
+        <h2>Lista de chequeo de extintores</h2>
+        <a href="https://forms.office.com/r/UQE2Lin5wJ" target="_blank">Abrir formulario</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleCategory(header) {
+      const content = header.nextElementSibling;
+      content.style.display = content.style.display === "block" ? "none" : "block";
+    }
+    function filterForms() {
+      const query = document.getElementById('searchBar').value.toLowerCase();
+      const cards = document.querySelectorAll('.form-card');
+      cards.forEach(card => {
+        const title = card.querySelector('h2').textContent.toLowerCase();
+        card.style.display = title.includes(query) ? 'block' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
