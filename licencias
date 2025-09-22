@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Licencias Internas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 1rem;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .person-card {
+      background-color: #fff;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .person-card a {
+      padding: 0.5rem 1rem;
+      background-color: #0078D4;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .person-card a:hover {
+      background-color: #005a9e;
+    }
+    .back {
+      display: block;
+      margin: 2rem auto;
+      text-align: center;
+    }
+    .back a {
+      color: #0078D4;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Licencias Internas</h1>
+
+  <div class="person-card">
+    <span>Alexander Arellano</span>
+    <a href="https://centinela.checksso.cl/licencia_vehiculos/acreditacion/show?id_acreditacion=10607&ok=1" target="_blank">Abrir</a>
+  </div>
+  <div class="person-card">
+    <span>Charles Ossandon</span>
+    <a href="https://centinela.checksso.cl/licencia_vehiculos/acreditacion/show?id_acreditacion=9685&ok=1" target="_blank">Abrir</a>
+  </div>
+  <div class="person-card">
+    <span>Enso Salas</span>
+    <a href="https://centinela.checksso.cl/licencia_vehiculos/acreditacion/show?id_acreditacion=2935&ok=1" target="_blank">Abrir</a>
+  </div>
+  <div class="person-card">
+    <span>Fisher Leon</span>
+    <a href="https://centinela.checksso.cl/licencia_vehiculos/acreditacion/show?id_acreditacion=2915&ok=1" target="_blank">Abrir</a>
+  </div>
+  <div class="person-card">
+    <span>Juan Sapiain</span>
+    <a href="https://centinela.checksso.cl/licencia_vehiculos/acreditacion/show?id_acreditacion=6829&ok=1" target="_blank">Abrir</a>
+  </div>
+  <div class="person-card">
+    <span>Mauricio Contreras</span>
+    <a href="https://centinela.checksso.cl/licencia_vehiculos/acreditacion/show?id_acreditacion=9691&ok=1" target="_blank">Abrir</a>
+  </div>
+  <div class="person-card">
+    <span>Miqueas Gonzalez</span>
+    <a href="https://centinela.checksso.cl/licencia_vehiculos/acreditacion/show?id_acreditacion=11880&ok=1" target="_blank">Abrir</a>
+  </div>
+  <div class="person-card">
+    <span>Nicolas Chirino</span>
+    <a href="https://centinela.checksso.cl/licencia_vehiculos/acreditacion/show?id_acreditacion=11791&ok=1" target="_blank">Abrir</a>
+  </div>
+  <div class="person-card">
+    <span>Pedro Chambe</span>
+    <a href="https://centinela.checksso.cl/licencia_vehiculos/acreditacion/show?id_acreditacion=12504&ok=1" target="_blank">Abrir</a>
+  </div>
+  <div class="person-card">
+    <span>Rodrigo Cruz</span>
+    <a href="https://centinela.checksso.cl/licencia_vehiculos/acreditacion/show?id_acreditacion=1587&ok=1" target="_blank">Abrir</a>
+  </div>
+  <div class="person-card">
+    <span>Victor Palominos</span>
+    <a href="https://centinela.checksso.cl/licencia_vehiculos/acreditacion/show?id_acreditacion=6609&ok=1" target="_blank">Abrir</a>
+  </div>
+
+  <div class="back">
+    <a href="index.html">← Volver a Formularios</a>
+  </div>
+</body>
+</html>
