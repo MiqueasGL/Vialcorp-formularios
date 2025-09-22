@@ -59,7 +59,7 @@
   <h1>Licencias Internas</h1>
 
   <!-- Buscador -->
-  <input type="text" id="searchBar" placeholder="Buscar nombre..." onkeyup="filterNames()">
+  <input type="text" id="searchBar" placeholder="Buscar por nombre o apellido..." onkeyup="filterNames()">
 
   <div class="person-card">
     <span>Alexander Arellano</span>
@@ -115,8 +115,8 @@
       const query = document.getElementById('searchBar').value.toLowerCase();
       const cards = document.querySelectorAll('.person-card');
       cards.forEach(card => {
-        const name = card.querySelector('span').textContent.toLowerCase();
-        card.style.display = name.includes(query) ? 'flex' : 'none';
+        const fullName = card.querySelector('span').textContent.toLowerCase();
+        card.style.display = fullName.includes(query) ? 'flex' : 'none';
       });
     }
   </script>
