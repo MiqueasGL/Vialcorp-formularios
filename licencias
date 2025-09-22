@@ -15,6 +15,14 @@
       text-align: center;
       color: #333;
     }
+    #searchBar {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 1rem 0;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
     .person-card {
       background-color: #fff;
       padding: 1rem;
@@ -49,6 +57,9 @@
 </head>
 <body>
   <h1>Licencias Internas</h1>
+
+  <!-- Buscador -->
+  <input type="text" id="searchBar" placeholder="Buscar nombre..." onkeyup="filterNames()">
 
   <div class="person-card">
     <span>Alexander Arellano</span>
@@ -98,5 +109,16 @@
   <div class="back">
     <a href="index.html">← Volver a Formularios</a>
   </div>
+
+  <script>
+    function filterNames() {
+      const query = document.getElementById('searchBar').value.toLowerCase();
+      const cards = document.querySelectorAll('.person-card');
+      cards.forEach(card => {
+        const name = card.querySelector('span').textContent.toLowerCase();
+        card.style.display = name.includes(query) ? 'flex' : 'none';
+      });
+    }
+  </script>
 </body>
 </html>
